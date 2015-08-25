@@ -4,7 +4,8 @@ python:
   - "2.7"
   - "3.4"
 # command to install dependencies
+sudo: false
 install:
-  - sudo apt-get install -y libevent-dev
+  - apt-get install -y libevent-dev
 # command to run tests
 script: python setup.py test
